@@ -1,10 +1,9 @@
 package Test;
 
-import PageObject.SearchResultsPage;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SearchResultsTest extends BaseTest {
+public class SearchResultsPagePageTest extends BasePageTest {
 
   @Test
   public void searchResults (){

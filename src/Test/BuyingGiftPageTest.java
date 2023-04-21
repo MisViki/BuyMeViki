@@ -3,7 +3,7 @@ package Test;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class BuyingGiftTest extends BaseTest {
+public class BuyingGiftPageTest extends BasePageTest {
     @Test
     public void buyingGift(){
         buyingGiftPage.setnameForWhoThisGiftFild("Marsel");

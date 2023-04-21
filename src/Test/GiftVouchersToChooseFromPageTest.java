@@ -1,10 +1,9 @@
 package Test;
 
-import PageObject.GiftVouchersToChooseFromPage;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class GiftVouchersToChooseFromTest extends BaseTest {
+public class GiftVouchersToChooseFromPageTest extends BasePageTest {
     @Test
     public void ChooseGiftVoucher(){
 

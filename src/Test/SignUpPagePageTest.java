@@ -1,11 +1,9 @@
 package Test;
 
-import PageObject.HomePage;
-import PageObject.LoginPage;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SignUpTest extends BaseTest{
+public class SignUpPagePageTest extends BasePageTest {
 
     @Test
     public void siteRegisteration(){

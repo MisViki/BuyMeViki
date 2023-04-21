@@ -22,7 +22,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 
-public class BaseTest {
+public class BasePageTest {
 
     static WebDriver driver;
     public static ExtentReports extent;
