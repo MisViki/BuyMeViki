@@ -1,14 +1,24 @@
-package Test;
+package Flows;
 
 import PageObject.HomePage;
 import PageObject.LoginPage;
-import org.junit.Assert;
+import PageObject.SignUpPage;
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
 
-public class SignUpTest extends BaseTest{
+public class SignUpPageFlow {
 
-    @Test
-    public void siteRegisteration(){
+    SignUpPage signUpPage;
+    HomePage homePage;
+
+    //Constructor
+    public SignUpPageFlow(WebDriver driver) {
+        super();
+        signUpPage = new SignUpPage(driver);
+        homePage = new HomePage(driver);
+    }
+
+    public void siteRegisteration() {
         homePage.loginSignUpButton();
         signUpPage.signUpButton();
         //loginPage.signUpButton();
@@ -19,18 +29,5 @@ public class SignUpTest extends BaseTest{
         signUpPage.agreementCheckBox();
         signUpPage.interToBuyMe();
 
-
-        //asserttion
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        Assert.assertFalse(homePage.myAccountDropDownIsDisplayed());
-        System.out.println("Test passed");
-
     }
-    private void assertEquals() {
-    }
-
 }

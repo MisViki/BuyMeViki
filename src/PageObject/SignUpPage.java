@@ -1,6 +1,5 @@
 package PageObject;
 
-import Test.SignUpTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -13,69 +12,69 @@ public class SignUpPage extends BasePage {
 
     // Web Elements
 
-    By LoginButton= By.cssSelector("[class='text-link theme']");
-    By FirstNameFild= By.cssSelector("[placeholder='שם פרטי']");
-    By EmailFild= By.cssSelector("[placeholder='מייל']");
-    By PasswordFild= By.cssSelector("[placeholder='סיסמה']");
-    By ValidationPasswordFild= By.cssSelector("[placeholder='אימות סיסמה']");
-    By LoginFacebooButton= By.cssSelector("[class='social-btn facebook']");
-    By LoginGoogleButton= By.cssSelector("[class='social-btn google']");
-    By SignUpButton= By.cssSelector("[gtm='הרשמה ל-BUYME']");
-    By AgreementCheckBox= By.cssSelector("[action='register'] div:nth-of-type(5) .check");
-    By MailingConfirmationCheckBox= By.cssSelector("[action='register'] div:nth-of-type(6) .check");
-
+   // By loginButton= By.cssSelector("[class='text-link theme']");
+    By firstNameFiled = By.cssSelector("[placeholder='שם פרטי']");
+    By emailFiled = By.cssSelector("[placeholder='מייל']");
+    By passwordFiled= By.cssSelector("[placeholder='סיסמה']");
+    By validationPasswordFiled= By.cssSelector("[placeholder='אימות סיסמה']");
+    By loginFacebooButton= By.cssSelector("[class='social-btn facebook']");
+    By loginGoogleButton= By.cssSelector("[class='social-btn google']");
+    By signUpButton= By.cssSelector("[class='text-link theme']");
+    By agreementCheckBox= By.cssSelector("[action='register'] div:nth-of-type(5) .fill");
+    By mailingConfirmationCheckBox= By.cssSelector("[action='register'] div:nth-of-type(6) .check");
+    By interToBuyMe= By.cssSelector("[gtm='הרשמה ל-BUYME']");
 
     //page methods
-    public SignUpPage LoginButton(String Login) {
-        click(LoginButton);
+
+
+    public SignUpPage setfirstNameFiled (String FirstName) {
+        writeText(firstNameFiled, FirstName);
         return this;
     }
 
-    public SignUpPage setFirstNameFild(String FirstName) {
-        writeText(FirstNameFild, FirstName);
+    public SignUpPage setemailFiled(String Email) {
+        writeText(emailFiled, Email);
         return this;
     }
 
-    public SignUpPage setEmailFild(String Email) {
-        writeText(EmailFild, Email);
+    public SignUpPage setPasswordFiled(String password) {
+        writeText(passwordFiled, password);
         return this;
     }
 
-    public SignUpPage setPasswordFild(String password) {
-        writeText(EmailFild, password);
+    public SignUpPage setValidationPasswordFiled(String ValidationPassword) {
+        writeText(validationPasswordFiled, ValidationPassword);
         return this;
     }
 
-    public SignUpPage setValidationPasswordFild(String ValidationPassword) {
-        writeText(ValidationPasswordFild, ValidationPassword);
+    public SignUpPage loginFacebooButton() {
+        click(loginFacebooButton);
         return this;
     }
 
-    public SignUpPage LoginFacebooButton(String LoginFaceboo) {
-        click(LoginFacebooButton);
+    public SignUpPage loginGoogleButton() {
+        click(loginGoogleButton);
         return this;
     }
 
-    public SignUpPage LoginGoogleButton(String LoginGoogle) {
-        click(LoginGoogleButton);
+    public SignUpPage signUpButton() {
+        click(signUpButton);
         return this;
     }
 
-    public SignUpPage SignUpButton(String SignUp) {
-        click(SignUpButton);
+    public SignUpPage agreementCheckBox() {
+        click(agreementCheckBox);
         return this;
     }
 
-    public SignUpPage AgreementCheckBox(String Agreement) {
-        click(AgreementCheckBox);
+    public SignUpPage mailingConfirmationCheckBox() {
+        click(mailingConfirmationCheckBox);
         return this;
     }
 
-    public SignUpPage MailingConfirmationCheckBox(String MailingConfirmation) {
-        click(MailingConfirmationCheckBox);
+    public SignUpPage interToBuyMe() {
+        click(interToBuyMe);
         return this;
     }
-
-
 
 }

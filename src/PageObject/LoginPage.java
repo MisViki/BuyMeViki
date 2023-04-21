@@ -11,58 +11,55 @@ public class LoginPage extends BasePage {
     }
 
     // Web Elements
+    By emailFild= By.cssSelector("[placeholder='מייל']");
+    By passwordFild= By.cssSelector("[placeholder='סיסמה']");
+    By forgotPasswordButton= By.cssSelector("['class=bm-body-2 text-link theme db']");
+    By loginBuyMeButton= By.cssSelector("[gtm='כניסה ל-BUYME']");
+    By loginFacebooButton= By.cssSelector("[class='social-btn facebook']");
+    By loginGoogleButton= By.cssSelector("[class='social-btn google']");
+    By rememberMeButton= By.cssSelector("[class='ember-view bm-checkbox checked'] [class='check']");
 
-    By EmailFild= By.cssSelector("[placeholder='מייל']");
-    By PasswordFild= By.cssSelector("[placeholder='סיסמה']");
-    By ForgotPasswordButton= By.cssSelector("['class=bm-body-2 text-link theme db']");
-    By LoginBuyMeButton= By.cssSelector("[class='bm-body-2 text-link theme db']");
-    By LoginFacebooButton= By.cssSelector("[class='social-btn facebook']");
-    By LoginGoogleButton= By.cssSelector("[class='social-btn google']");
-    By RememberMeButton= By.cssSelector("[class='ember-view bm-checkbox checked'] [class='check']");
-    By SignUpButton= By.cssSelector("[class='text-link theme']");
+
 
     //By loginErrorMassage= By.cssSelector();
 
 
     //page methods
-    public LoginPage setEmailFild (String email) {
-        writeText(EmailFild, email);
+    public LoginPage setemailFild (String email) {
+        writeText(emailFild, email);
         return this;
     }
 
-    public LoginPage setPasswordFild(String password) {
-        writeText(EmailFild, password);
+    public LoginPage setpasswordFild(String password) {
+        writeText(passwordFild, password);
         return this;
     }
 
-    public LoginPage ForgotPasswordButton(String forgotPassword) {
-        click(ForgotPasswordButton);
+    public LoginPage forgotPasswordButton() {
+        click(forgotPasswordButton);
         return this;
     }
-    public LoginPage LoginBuyMeButton(String loginBuyMe) {
-        click(LoginBuyMeButton);
+    public LoginPage loginBuyMeButton() {
+        click(loginBuyMeButton);
         return this;
     }
 
-        public LoginPage LoginFacebooButton(String loginFacebook){
-            click(LoginFacebooButton);
+        public LoginPage loginFacebooButton(){
+            click(loginFacebooButton);
             return this;
         }
 
-    public LoginPage LoginGoogleButtonutton(String logingoogle) {
-        click(LoginGoogleButton);
+    public LoginPage loginGoogleButtonutton() {
+        click(loginGoogleButton);
         return this;
     }
 
-    public LoginPage RememberMeButton(String rememberMe) {
-        click(RememberMeButton);
+    public LoginPage rememberMeButton() {
+        click(rememberMeButton);
         return this;
     }
 
-    public LoginPage SignUpButton(String signUp) {
-        click(SignUpButton);
-        return this;
-    }
+
 
 }
 
@@ -78,8 +75,4 @@ public class LoginPage extends BasePage {
   //  By loginErrorMassage = By.cssSelector();
 
 
-    private void click() {
-    }
-
-    private void click() {
-    }
+    
