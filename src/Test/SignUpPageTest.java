@@ -3,7 +3,7 @@ package Test;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SignUpPagePageTest extends BasePageTest {
+public class SignUpPageTest extends BasePageTest {
 
     @Test
     public void siteRegisteration(){
