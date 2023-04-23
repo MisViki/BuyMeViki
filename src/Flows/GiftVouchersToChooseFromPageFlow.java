@@ -13,4 +13,8 @@ public class GiftVouchersToChooseFromPageFlow {
         super();
         giftVouchersToChooseFromPage = new GiftVouchersToChooseFromPage(driver);
     }
+
+    public void ChooseGiftVoucher (){
+        giftVouchersToChooseFromPage.selectedGiftVoucher();
+    }
 }

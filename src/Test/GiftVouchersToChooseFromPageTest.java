@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class GiftVouchersToChooseFromPageTest extends BasePageTest {
     @Test
-    public void ChooseGiftVoucher(){
+    public void ChooseGiftVoucher() {
 
         giftVouchersToChooseFromPage.selectedGiftVoucher();
 
@@ -13,10 +13,5 @@ public class GiftVouchersToChooseFromPageTest extends BasePageTest {
         System.out.println("Test passed");
 
     }
-
-
-//    @Test
-//    public GiftVouchersToChooseFromTest selectedGift() {
-//        giftVouchersToChooseFromPage.selectedGiftVoucher();
-//    }
 }
+

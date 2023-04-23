@@ -12,5 +12,12 @@ public class SearchResultsPageFlow {
     public SearchResultsPageFlow (WebDriver driver) {
         super();
         searchResultsPage = new SearchResultsPage(driver);
+
+    }
+
+    public void searchResults (){
+        searchResultsPage.categorySelectedButton();
+
     }
 }
+

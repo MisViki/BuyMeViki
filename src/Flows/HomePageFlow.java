@@ -20,4 +20,18 @@ public class HomePageFlow {
     }
 
 
+    public void findMeAPresent() {
+        //שדות חיפוש מתנה
+        homePage.sumDropDown();
+        homePage.giftPriceRangeButton();
+        homePage.areaDropDown();
+        homePage.eilatAreaButton();
+        homePage.categoryDropDown();
+        homePage.categoryVacationAndHotelsButton();
+        homePage.findMePresentButton();
+    }
+
+
+
+
 }
